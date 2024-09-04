@@ -1,0 +1,231 @@
+body{
+    margin: 0px;
+}
+
+.Encabezado{
+background-color: #F6FFF8;
+margin: 0px;
+padding: 2px;
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#Logo{
+ width: 80px;
+ height: 80px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.mask1 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+}
+#ImagenMask{
+    width: 100%;
+    height: 100%;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+body{
+    background: url(https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-gym-with-racks-on-an-empty-floor-image_2949919.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100px;
+}
+.capa{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+}
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.container .btn-menu, .logo{
+    float: left;
+    line-height:100px;
+}
+.container .btn-menu label{
+    color: #f6fff8;
+    font-size: 25px;
+    cursor: pointer;
+}
+.logo h1{
+    color: #f6fff8;
+    font-weight: 400;
+    font-size: 22px;
+}
+.container .menu{
+    float: right;
+    line-height: 100px;
+}
+.container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #f6fff8;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+}
+.container .menu a:hover{
+    border-bottom: 2px solid #f6fff8;
+    padding-bottom: 5px;
+}
+
+#btn-menu{
+    display: none;
+}
+.menucontenedor{
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100vh;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+}
+#btn-menu:checked ~ .menucontenedor{
+    opacity: 1;
+    visibility: visible;
+}
+.cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #1c1c1c;
+    height: 100vh;
+    position: relative;
+    transition: all 00ms ease;
+    transform: translateX(-100%);
+}
+#btn-menu:checked ~ .menucontenedor .cont-menu{
+    transform: translateX(0%);
+}
+.cont-menu nav{
+    transform: translateY(15%);
+}
+.cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #f6fff8;
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+    border-left: 5px solid #f6fff8;
+    background: #1f1f1f;
+}
+.cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #f6fff8;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.textoprincipal{
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6fff8;
+}
+
+#texto1{
+    color: #f6fff8 ;
+    width: 700px;
+    padding-top:150px;
+    font-size: 25px; 
+    transition: 0.3s;
+}
+#texto1:hover {
+    font-size: 28px;
+}
+
+.segundaparte{
+    background-color:#f6fff8;
+    margin-top: 180px;
+    float: inline-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 150px;
+}
+.beneficios    {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+#beneficios-container{
+    background: rgba(0, 0, 0, 0.103);
+    border-radius: 10px;
+    text-align: center;
+    backdrop-filter: blur(40px);
+    width: 240px;
+    height: 240px;
+    margin-left: 15px;
+    margin-right: 15px;
+    transition: 0.4s; 
+    background-color: #cce3de;
+}
+#beneficios-container:hover {
+    width: 260px;
+    height: 260px;
+    background-color: #a4c3b2;
+}
+#titulo{
+    color:#6b9080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+}
+#imagenes-beneficios{
+    width: 80px;
+    height: 80px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+#titulo-beneficios{
+    color: #253237;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+#texto-beneficios{
+    color: #253237;
+    font-size: 16px;
+    margin: 10px;
+}
+.terceraparte{
+    background-color:#cce3de;
+    float: inline-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 500px;
+}
