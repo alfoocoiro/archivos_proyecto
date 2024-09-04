@@ -35,7 +35,7 @@ justify-content: center;
     font-family: 'Montserrat Alternates', sans-serif;
 }
 body{
-    background: url(https://png.pngtree.com/thumb_back/fh260/background/20230610/pngtree-gym-with-racks-on-an-empty-floor-image_2949919.jpg);
+    background: url(https://img.freepik.com/fotos-premium/fruta-fresca-que-cae-agua-es-perfecta-conceptos-estilo-vida-saludable_153912-165586.jpg);
     background-size: 100vw 100vh;
     background-repeat: no-repeat;
     max-width: 100%;
@@ -113,7 +113,7 @@ body{
 .cont-menu{
     width: 100%;
     max-width: 250px;
-    background: #1c1c1c;
+    background: #CCE3DE;
     height: 100vh;
     position: relative;
     transition: all 00ms ease;
@@ -129,13 +129,14 @@ body{
     display: block;
     text-decoration: none;
     padding: 20px;
-    color: #f6fff8;
+    color: #6b9080;
     border-left: 5px solid transparent;
     transition: all 400ms ease;
 }
 .cont-menu nav a:hover{
     border-left: 5px solid #f6fff8;
-    background: #1f1f1f;
+    color:#CCE3DE;
+    background: #344f30;
 }
 .cont-menu label{
     position: absolute;
@@ -167,9 +168,58 @@ body{
     font-size: 28px;
 }
 
-.segundaparte{
-    background-color:#f6fff8;
+/* SEGUNDA PARTE */
+.segundaParte{
+    background-color:#cce3de;
     margin-top: 180px;
+    float: inline-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+#plato{
+    height: 200px;
+    width: 280px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 75px;
+    margin-top: 60px;
+
+}
+#fondo-plato{
+    height: 550px;
+    width: 550px;
+}
+.textos1{
+    justify-content: center;
+}
+#texto-importancia{
+    color: #253237;
+    font-size: 16px;
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: justify;
+
+}
+#titulo-importancia{
+    color:#344f30;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+
+/* TERCER PARTE */
+
+.terceraParte{
+    background-color:#f6fff8;
     float: inline-start;
     width: 100%;
     height: 100%;
@@ -222,10 +272,28 @@ body{
     font-size: 16px;
     margin: 10px;
 }
-.terceraparte{
+
+/*CUARTA PARTE*/
+
+.cuartaParte{
     background-color:#cce3de;
     float: inline-start;
     width: 100%;
     height: 100%;
-    padding-bottom: 500px;
+    display: flex;
+    align-items: center;
+}
+#logo2{
+    height: 300px;
+    width: 300px;
+    margin-right: 60px;
+    margin-top: 100px;
+    
+} 
+#titulo-final{
+    color:#344f30;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align: center;
 }
