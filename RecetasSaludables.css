@@ -1,6 +1,6 @@
 body{
-    background-color: #cce3de;
-}
+    background-color: #CCE3DE
+  }
 #Logo{
   width: 80px;
   height: 80px;
@@ -125,11 +125,16 @@ body{
   .contenedor1{
     display: block;
     align-items: center;
-    justify-content: center;
-    margin-left: 40px;
+    margin: 20px;
+    float: inline-start;
+    width: 100%;
+    height: 100%;
+    float:inline-start;
+    border-radius: 10px;
   }
 
   .primeraParte{
+    background-color:#CCE3DE;
     float: inline-start;
     width: 100%;
     height: 100%;
@@ -137,24 +142,20 @@ body{
     align-items: center;
   }
 
-  .tituloPrincipal{
-    color: #344F30; 
-    font-size: 14px;
-    background-color: #f6fff8;
-    border-radius: 20px;
-    text-align: center;
-    width: 750px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  #tituloPrincipal{
+    color: #6b9080; 
+    font-size: 32px;
+    margin-left: 80px;
+    margin-top: 90px;
   }
 
   #texto1{
     color: #344f30;
-    font-size: 18px;
-    margin-right: 70px;
-    text-align: center;
+    font-size: 17px;
+    margin-left: 80px;
+    margin-right: 250px;
+    justify-content: flex-start;
+    margin-top: 15px;
   }
 
   #imagen1{
@@ -163,6 +164,20 @@ body{
     margin-right: 60px;
     margin-top: 40px;
   } 
+  /*SEGUNDA PARTE*/
+
+  .parteDos{
+    background-color: red;
+    display: flex;
+    align-items: end;
+    }
+
+  #contenedores{
+    background-color:#6b9080;
+    height: 100px;
+    width: 100px;
+  }
+
 
   /*PARTE FINAL*/
   
