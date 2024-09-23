@@ -1,41 +1,69 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat Alternates', sans-serif;
+}    
+
 body{
-  background-color: #CCE3DE
+  background: url(https://img.freepik.com/fotos-premium/ingredientes-seleccion-alimentos-saludables-sobre-fondo-blanco-madera_35641-3710.jpg);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
 }
-#Logo{
+
+/* ENCABEZADO */
+.Encabezado{
+background-color: #F6FFF8;
+font-size: 25px;
+display: flex;
+}
+
+.logo-nombre{
+  display: flex;
+  align-items: center;
+}
+
+#logo{
 width: 80px;
 height: 80px;
 }
 
-.logo{
-  display: flex;
-  align-items: center;
-}  
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+#ImagenMask{
+  width: 100%;
+  height: 100%;
+}
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Montserrat Alternates', sans-serif;
+.capa{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  z-index: -1;
+  top: 0;left: 0;
 }
 
 .container{
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  background-color: #f6fff8;
 }
 
-.container .btn-menu, .logo{
+.container .btn-menu, .logo-nombre{
   float: right;
   line-height:100px;
 }
 .container .btn-menu label{
-  color: #344F30;
+  color: #f6fff8;
   font-size: 25px;
   cursor: pointer;
 }
-.logo h1{
-  color: #344F30;
+.logo-nombre h1{
+  color: #f6fff8;
   font-weight: 400;
   font-size: 22px;
 }
@@ -48,14 +76,14 @@ height: 80px;
   padding: 15px;
   line-height: normal;
   text-decoration: none;
-  color: #344F30;
+  color: #f6fff8;
   transition: all 0.3s ease;
   border-bottom: 2px solid transparent;
   font-size: 15px;
   margin-right: 5px;
 }
 .container .menu a:hover{
-  border-bottom: 2px solid #344F30;
+  border-bottom: 2px solid #f6fff8;
   padding-bottom: 0px;
 }
 
@@ -73,7 +101,6 @@ height: 80px;
   position: absolute;
   background: rgba(0,0,0,0.6);
   width: 100%;
-  height: 590px;
   top: 0;left: 0;
   transition: all 500ms ease;
   opacity: 0;
@@ -120,101 +147,134 @@ height: 80px;
   font-size: 18px;
 }
 
-/*PRIMERA PARTE*/
-
-.contenedor1{
-  display: flex;
-  align-items: center;
-  justify-content:space-between ;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-}
-
-#tituloPrincipal{
-  color: #6b9080; 
-  font-size: 32px;
-  margin-left: 80px;
-  margin-top: 90px;
-}
-
-#texto1{
-  color: #344f30;
-  font-size: 17px;
-  margin-left: 80px;
-  margin-right: 250px;
-  justify-content: flex-start;
-  margin-top: 15px;
-}
-
-#imagen1{
-  height:330px;
-  width: 330px;
-  margin-right: 60px;
-  margin-top: 40px;
-} 
-/*SEGUNDA PARTE*/
-
-.contenedor2{
-  background-color: #a4c3b2;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: 100%;
-}
-
-#texto2{
-  color: #344f30;
-  font-size: 17px;
-  margin-left: 80px;
-  margin-right: 250px;
-  justify-content: flex-start;
-  margin-top: 15px;
-}
-
-#SegundoTitulo{
-  color: #6b9080; 
-  font-size: 32px;
-  margin-left: 80px;
-  margin-top: 90px;
-}
-
-#imagen2{
-  height:330px;
-  width: 330px;
-  margin-right: 60px;
-  margin-top: 40px;
-}
-
-#contenedores{
-  background-color:#6b9080;
-  height: 100px;
-  width: 100px;
-}
-
-
-/*PARTE FINAL*/
-
-.parteFinal{
-  background-color:#cce3de;
-  float: inline-start;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-#logo2{
-  height: 300px;
-  width: 300px;
-  margin-right: 60px;
-  margin-top: 100px;
+  /*PRIMERA PARTE*/
   
-} 
-#titulo-final{
-  color:#344f30;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-top: 100px;
-  text-align: center;
+  .cuadradoPrincipal {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(85%);
+    margin-bottom: 370px;  
+    margin-left: 430px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  #cuadrado-titulo {
+    margin-bottom: 15px;
+    color: black;
+    padding-top: 30px;
+  }
+  
+  #cuadrado-descripcion {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  #cuadrado-boton{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #6b9080;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 30px;
+  }
+
+  /*SEGUNDA PARTE*/
+
+  .contenedor2{
+    background-color: #f6fff8;
+    width: 100%;
+    height: 100%;
+  }
+  
+  #segundoTitulo{
+    color: #6b9080; 
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top:40px;
+  }
+
+  #texto2{
+    margin-left: 200px;
+    margin-right: 200px;
+    color:#666;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  .contenedor-opciones{
+    display: flex;
+    gap: 20px;
+    justify-content:space-evenly;
+  }
+  
+  .categorias{
+    background-color: #CCE3DE;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    position: relative;
+    margin-bottom: 50px;
+    transition: 0.3;
+  }
+
+  .categorias:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .categorias img {
+    border-radius: 50%;
+    width: 110px;
+    height: 110px;
+    transform: translateY(-40%);
+    max-width: none; 
+    max-height: none; 
+  }
+  
+  .categorias h3 {
+    margin-top: 0px;
+  }
+  
+  .categorias p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+
+  #link {
+    color: #4A4A4A;
+    text-decoration: none;
 }
+
+  /*PARTE FINAL*/
+  
+  .parteFinal{
+    background-color:#cce3de;
+    float: inline-start;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  #logo2{
+    height: 300px;
+    width: 300px;
+    margin-right: 60px;
+    margin-top: 100px;
+    
+  } 
+  #titulo-final{
+    color:#344f30;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    text-align: center;
+  }
