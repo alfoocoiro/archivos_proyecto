@@ -282,6 +282,80 @@ body{
     text-decoration: none;
 }
 
+/*TERCERA PARTE*/
+
+.contenedor3{
+  background-color: #cce3de;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#tercerTitulo{
+  color: #6b9080; 
+  font-size: 32px;
+  text-align: center;
+  margin: 15px;
+}
+
+.SentadillaInfo{
+  padding-top:40px;
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-bottom: 40px;
+}
+
+#texto3{
+  color:#666;
+  text-align: justify;
+}
+
+#sentadillaImg{
+  width: 470px;
+  height: 300px;
+  margin: 80px;
+  border-radius: 40px;
+}
+
+/*CUARTA PARTE*/
+
+.contenedor4{
+  background-color: #f6fff8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cuartoTitulo{
+  color: #6b9080; 
+  font-size: 32px;
+  text-align: center;
+  margin: 15px;
+}
+
+.PlanchaIsometricaInfo{
+  padding-top:40px;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-bottom: 40px;
+}
+
+#texto4{
+  color:#666;
+  text-align: justify;
+}
+
+#PlanchaIsometricaImg{
+  width: 470px;
+  height: 300px;
+  margin: 80px;
+  border-radius: 40px;
+}
+
 /*PARTE FINAL*/
   
 .parteFinal{
