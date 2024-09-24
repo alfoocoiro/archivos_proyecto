@@ -1,1 +1,299 @@
+body{
+  margin: 0px;
+}
 
+.Encabezado{
+background-color: #F6FFF8;
+margin: 0px;
+padding: 2px;
+font-size: 25px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#Logo{
+width: 80px;
+height: 80px;
+}
+.logo{
+  display: flex;
+  align-items: center;
+}
+.mask1 {
+  -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent);
+}
+#ImagenMask{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+body{
+  background: url(https://editorial.foodandwineespanol.com/wp-content/uploads/2024/02/Ensalada-Pollo.webp);
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.capa{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  z-index: -1;
+  top: 0;left: 0;
+}
+.header{
+  width: 100%;
+  position: fixed;
+  top: 0;left: 0;
+}
+.container{
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.container .btn-menu, .logo{
+  float: right;
+  line-height:100px;
+}
+.container .btn-menu label{
+  color: #f6fff8;
+  font-size: 25px;
+  cursor: pointer;
+}
+.logo h1{
+  color: #f6fff8;
+  font-weight: 400;
+  font-size: 22px;
+}
+.container .menu{
+  float: left;
+  line-height: 100px;
+}
+.container .menu a{
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #f6fff8;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+.container .menu a:hover{
+  border-bottom: 2px solid #f6fff8;
+  padding-bottom: 0px;
+}
+
+#btn-menu{
+  display: none;
+}
+
+
+.menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menucontenedor{
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#btn-menu:checked ~ .menucontenedor{
+  opacity: 1;
+  visibility: visible;
+}
+.cont-menu{
+  width: 100%;
+  max-width: 250px;
+  background: #CCE3DE;
+  height: 100vh;
+  position: relative;
+  transition: all 00ms ease;
+  transform: translateX(-100%);
+}
+#btn-menu:checked ~ .menucontenedor .cont-menu{
+  transform: translateX(0%);
+}
+.cont-menu nav{
+  transform: translateY(15%);
+}
+.cont-menu nav a{
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #6b9080; 
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+.cont-menu nav a:hover{
+  border-left: 5px solid #f6fff8;
+  color:#CCE3DE;
+  background: #344f30;
+}
+.cont-menu label{
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #f6fff8;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.textoprincipal{
+  display: flex;
+  width: 100%;
+  height: 100%; 
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #f6fff8;
+}
+
+#texto1{
+  color: #f6fff8 ;
+  width: 700px;
+  padding-top:150px;
+  font-size: 28px; 
+  transition: 0.3s;
+}
+
+/*PRIMERA PARTE*/
+
+.cuadradoPrincipal {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  text-align: center;
+  width: 450px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transform: translateY(50%);
+  margin-bottom: 310px;  
+  margin-left: 440px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#cuadrado-titulo {
+  margin-bottom: 15px;
+  color: black;
+  padding-top: 30px;
+}
+
+#cuadrado-descripcion {
+  color: #666;
+  margin-bottom: 20px;
+  padding-bottom: 50px;
+}
+
+
+/*SEGUNDA PARTE*/
+
+.contenedor2{
+  background-color: #f6fff8;
+  width: 100%;
+  height: 100%;
+}
+
+#segundoTitulo{
+  color: #6b9080; 
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 25px;
+  padding-top:40px;
+}
+
+#texto2{
+  margin-left: 200px;
+  margin-right: 200px;
+  color:#666;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contenedor-ejercicios{
+  display: flex;
+  gap: 20px;
+  justify-content:space-evenly;
+}
+
+.deportes{
+  background-color: #CCE3DE;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 180px;
+  position: relative;
+  margin-bottom: 50px;
+  transition: 0.3;
+}
+
+.deportes:hover {
+  transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+}
+
+.deportes img {
+  border-radius: 80px;
+  width: 160px;
+  height: 160px;
+  transform: translateX(-5%);
+  margin-bottom: 10px;
+  }
+
+.deportes h3 {
+  margin-top: 0px;
+}
+
+.deportes p {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+#link {
+  color: #4A4A4A;
+  text-decoration: none;
+}
+
+
+/*PARTE FINAL*/
+
+.parteFinal{
+background-color:#cce3de;
+float: inline-start;
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+}
+#logo2{
+height: 300px;
+width: 300px;
+margin-right: 60px;
+margin-top: 100px;
+
+} 
+#titulo-final{
+color:#344f30;
+margin-left: 100px;
+margin-right: 100px;
+margin-top: 100px;
+text-align: center;
+}
