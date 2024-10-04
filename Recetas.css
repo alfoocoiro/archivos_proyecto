@@ -197,24 +197,73 @@
     text-decoration: none;
 }
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+.contenedorgaleria {
+  text-align: center;
+  padding: 50px;
+  background-color:#f6fff8;
+}
+
+.contenedorgaleria h1 {
+  color: #6b9080;
+}
+
+.contenedorgaleria p {
+  font-size: 18px;
+  color: #555;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.galeria-item{
+  position: relative;
+}
+
+.galeria-item img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
   
     /*SEGUNDA PARTE*/
 
     .contenedor3-4{
+      background-color: #cce3de;
+      display: flex;
+    }
+
+    .contenedor3-4 h1{
+      color:#344f30;
+      margin-top: 50px;
+      margin-bottom: 10px;
+    }
+
+    .contenedor5-6{
       display:flex;
+      background-color: #F6FFF8;
     }
   
-    .contenedor3{
+    .contenedor5{
       background-color: #f6fff8;
       display: flex;
       flex-direction: column;
+      gap: 10px;  
     }
 
-    .contenedor3 h1{
-      text-align: justify;
-      color:#6b9080;
-    }
-  
+
     .ingredientes{
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
       margin-left: 150px;
@@ -222,6 +271,11 @@
       width: 280px;
       padding: 30px;
       background-color: #F6FFF8;
+    }
+
+    .ingredientes h1{
+      margin-top: 0px;
+      color:#344f30;
     }
   
     ul {
@@ -241,7 +295,6 @@
 
     .recetasDatos{
       display: flex;
-
     }
 
     .datos img{
@@ -254,13 +307,6 @@
     #textoDatos{
       margin-left: 30px;
       margin-top: 37px;
-    }
-
-    .contenedor4{
-      display: flex; 
-      flex-direction: column;
-      gap: 10px;
-      background-color: #f6fff8;
     }
   
     .img-recetas{
@@ -283,32 +329,34 @@
       background-color: #F6FFF8;
     }
 
-    #titulorecetas{
-      text-align: center;
-      margin-top: 70px;
-      color:#6b9080;
+    .pasos h1{
+      margin-top: 0px;
+      color:#344f30;
+      margin-bottom: 10px;
     }
 
-    /*PARTE CINCO Y SEIS*/
-
-    .contenedor5-6{
-      background-color: #cce3de;
-      display: flex;
+    #tituloreceta1{
+      margin-top: 50px;
+      color:#344f30;
     }
 
-    #titulorecetas2{
-      color:#6b9080;
+    #tituloreceta2{
+      margin-top: 50px;
+      margin-bottom: 40px;
+      color:#344f30;
     }
 
-    #titulorecetas3{
-      color:#6b9080;
-      margin-top: 15px;
+    #tituloreceta3{
+      margin-top: 50px;
+      color:#344f30;
+      margin-bottom: 40px;
     }
+    
   
     /*PARTE FINAL*/
     
     .parteFinal{
-      background-color:#cce3de;
+      background-color:#f6fff8;
       float: inline-start;
       width: 100%;
       height: 100%;
