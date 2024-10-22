@@ -234,7 +234,7 @@ body{
   justify-content:space-evenly;
 }
 
-.deportes{
+.nosotros{
   background-color: #CCE3DE;
   padding: 20px;
   text-align: center;
@@ -245,11 +245,11 @@ body{
   transition: 0.3;
 }
 
-.deportes:hover {
+.nosotros:hover {
   transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
 }
 
-.deportes img {
+.nosotros img {
   border-radius: 80px;
   width: 160px;
   height: 160px;
@@ -257,7 +257,7 @@ body{
   margin-bottom: 10px;
   }
 
-.deportes h3 {
+.nosotros h3 {
   margin-top: 0px;
 }
 
