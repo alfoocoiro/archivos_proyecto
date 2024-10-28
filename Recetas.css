@@ -9,6 +9,10 @@
     background-repeat: no-repeat;
     max-width: 100%;
     max-height: 100%;
+    font-family: Arial, sans-serif;
+    margin: 0;
+     padding: 0;
+     background-color: #f9f9f9;
     
   }
   
@@ -197,13 +201,6 @@
     text-decoration: none;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
-}
-
 .contenedorgaleria {
   text-align: center;
   padding: 50px;
@@ -378,3 +375,14 @@ body {
       text-align: center;
     }
 
+
+    #arrowup{
+      position: fixed;
+      display: flex;
+    
+      width: 30px;
+      height: 30px;
+    
+      bottom: 20px;
+      right: 60px;
+    }
