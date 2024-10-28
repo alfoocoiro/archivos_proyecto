@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login-signup.css">
-    <title>Login</title>
+    <title>Sign up</title>
 </head>
 <body>
     <script src="login-signup.js"></script>
     <div class="login-container">
         <div class="login-box">
             <div class="TituloyRetorno">
-                <a href="PaginaPrincipal.html"> <img id="FlechaVolverAtras" src="https://cdn-icons-png.flaticon.com/512/32/32170.png" alt="VolverAtras"></a>
-                <h2>Log-in</h2>
-            </div>            
-            <form>
+            <a href="PaginaPrincipal.html"> <img id="FlechaVolverAtras" src="https://cdn-icons-png.flaticon.com/512/32/32170.png" alt="VolverAtras"></a>
+            <h2>Log-in</h2>
+        </div>
+            <form id="loginForm" action="login.php" method="POST">
+
                 <div class="textbox">
-                    <input type="text" placeholder="Username" name="username" required>
+            <label for="username"></label>
+            <input placeholder="Username" type="text" id="username" name="username" required>
                 </div>
-                <div class="textbox">
-                    <input type="password" placeholder="Password" name="password" required>
-                </div>
-                <button type="submit" class="button">Submit</button>
+
+            <div class="textbox">
+            <label for="password"></label>
+            <input placeholder="Password" type="password" id="password" name="password" required>
+                 </div>
+            
+                 <button id="register" type="submit">Subimit</button>
+
                 <div class="forgot-password">
                     <p>If you dont have an account <a id="forgotpassword" href="signup.html"><u>Sign-up</u></a></p>
                 </div>
