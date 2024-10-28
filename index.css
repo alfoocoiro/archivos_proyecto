@@ -306,3 +306,14 @@ body{
   margin-top: 100px;
   text-align: center;
 }
+
+#arrowup{
+  position: fixed;
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+
+  bottom: 20px;
+  right: 60px;
+}
