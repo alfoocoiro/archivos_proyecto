@@ -185,6 +185,7 @@ body{
     width: 450px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transform: translateY(50%);
+    margin-top: 20px;
     margin-bottom: 310px;  
     margin-left: 440px;
     padding-left: 40px;
@@ -284,7 +285,7 @@ body{
 
 /*TERCERA PARTE*/
 
-.contenedor3{
+.contenedor3-5{
   background-color: #cce3de;
   width: 100%;
   height: 100%;
@@ -293,35 +294,33 @@ body{
   align-items: center;
 }
 
-#tercerTitulo{
+.contenedor3-5 h1{
   color: #6b9080; 
   font-size: 32px;
   text-align: center;
   margin: 15px;
 }
 
-.SentadillaInfo{
+.info-3-5{
   padding-top:40px;
   margin-left: 100px;
   margin-right: 200px;
   margin-bottom: 40px;
 }
 
-#texto3{
+.info-3-5 p{
   color:#666;
   text-align: justify;
 }
 
-#sentadillaImg{
+#imagenes{
   width: 470px;
   height: 300px;
   margin: 80px;
   border-radius: 40px;
 }
 
-/*CUARTA PARTE*/
-
-.contenedor4{
+.contenedor4-6{
   background-color: #f6fff8;
   width: 100%;
   height: 100%;
@@ -330,30 +329,23 @@ body{
   align-items: center;
 }
 
-#cuartoTitulo{
+.info-4-6 h1{
   color: #6b9080; 
   font-size: 32px;
   text-align: center;
   margin: 15px;
 }
 
-.PlanchaIsometricaInfo{
+.info-4-6{
   padding-top:40px;
   margin-left: 200px;
   margin-right: 100px;
   margin-bottom: 40px;
 }
 
-#texto4{
+.info-4-6 p{
   color:#666;
   text-align: justify;
-}
-
-#PlanchaIsometricaImg{
-  width: 470px;
-  height: 300px;
-  margin: 80px;
-  border-radius: 40px;
 }
 
 /*PARTE FINAL*/
@@ -379,4 +371,15 @@ body{
   margin-right: 100px;
   margin-top: 100px;
   text-align: center;
+}
+
+#arrowup{
+  position: fixed;
+  display: flex;
+
+  width: 30px;
+  height: 30px;
+
+  bottom: 20px;
+  right: 60px;
 }
