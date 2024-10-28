@@ -1,105 +1,308 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recomendaciones</title>
-    <link rel="stylesheet" href="Recomendaciones.css">
-    <div class="container">
+body{
+    margin: 0px;
+  }
+  
+  .Encabezado{
+  background-color: #F6FFF8;
+  margin: 0px;
+  padding: 2px;
+  font-size: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+  
+  #Logo{
+  width: 80px;
+  height: 80px;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+  }
+  .mask1 {
+    -webkit-mask-image: linear-gradient(black, transparent);
+    mask-image: linear-gradient(black, transparent);
+  }
+  #ImagenMask{
+    width: 100%;
+    height: 100%;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat Alternates', sans-serif;
+  }
+  
+  body{
+    background: url(https://static.vecteezy.com/system/resources/previews/017/111/123/non_2x/healthy-llifestyle-elements-frame-background-free-vector.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .capa{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    z-index: -1;
+    top: 0;left: 0;
+  }
+  .header{
+    width: 100%;
+    position: fixed;
+    top: 0;left: 0;
+  }
+  .container{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+  }
+  .container .btn-menu, .logo{
+    float: right;
+    line-height:100px;
+  }
+  .container .btn-menu label{
+    color: #f6fff8;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .logo h1{
+    color: #f6fff8;
+    font-weight: 400;
+    font-size: 22px;
+  }
+  .container .menu{
+    float: left;
+    line-height: 100px;
+  }
+  .container .menu a{
+    display: inline-block;
+    padding: 15px;
+    line-height: normal;
+    text-decoration: none;
+    color: #f6fff8;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    font-size: 15px;
+    margin-right: 5px;
+  }
+  .container .menu a:hover{
+    border-bottom: 2px solid #f6fff8;
+    padding-bottom: 0px;
+  }
+  
+  #btn-menu{
+    display: none;
+  }
+  
+  
+  .menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .menucontenedor{
+    position: absolute;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;left: 0;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+  }
+  #btn-menu:checked ~ .menucontenedor{
+    opacity: 1;
+    visibility: visible;
+  }
+  .cont-menu{
+    width: 100%;
+    max-width: 250px;
+    background: #CCE3DE;
+    height: 100vh;
+    position: relative;
+    transition: all 00ms ease;
+    transform: translateX(-100%);
+  }
+  #btn-menu:checked ~ .menucontenedor .cont-menu{
+    transform: translateX(0%);
+  }
+  .cont-menu nav{
+    transform: translateY(15%);
+  }
+  .cont-menu nav a{
+    display: block;
+    text-decoration: none;
+    padding: 20px;
+    color: #6b9080; 
+    border-left: 5px solid transparent;
+    transition: all 400ms ease;
+  }
+  .cont-menu nav a:hover{
+    border-left: 5px solid #f6fff8;
+    color:#CCE3DE;
+    background: #344f30;
+  }
+  .cont-menu label{
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    color: #f6fff8;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .textoprincipal{
+    display: flex;
+    width: 100%;
+    height: 100%; 
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f6fff8;
+  }
+  
+  #texto1{
+    color: #f6fff8 ;
+    width: 700px;
+    padding-top:150px;
+    font-size: 28px; 
+    transition: 0.3s;
+  }
+  
+  /*PRIMERA PARTE*/
+  
+  .cuadradoPrincipal {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    text-align: center;
+    width: 450px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transform: translateY(50%);
+    margin-bottom: 310px;  
+    margin-left: 440px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  #cuadrado-titulo {
+    margin-bottom: 15px;
+    color: black;
+    padding-top: 30px;
+  }
+  
+  #cuadrado-descripcion {
+    color: #666;
+    margin-bottom: 30px;
+  }
+  
+  
+  /*SEGUNDA PARTE*/
+  
+  .contenedor2{
+    background-color: #f6fff8;
+    width: 100%;
+    height: 100%;
+  }
+  
+#segundoTitulo{
+    color: #6b9080; 
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 25px;
+    padding-top:40px;
+  }
 
-            <div class="logo">
-                <h1>𝐁𝐞 𝐇𝐞𝐚𝐥𝐭𝐡𝐲</h1>
-                <img id="Logo" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/LogoProyecto.png?raw=true" alt="logo">            </div>
-            <nav class="menu">
-                <div class="btn-menu"><label for="btn-menu">☰</label></div>
-                <div><a href="index.html">𝐈𝐧𝐢𝐜𝐢𝐨</a></div>
-                <div><a href="login.html">𝐔𝐬𝐮𝐚𝐫𝐢𝐨</a></div>
-                <div><a href="#">𝐈𝐝𝐢𝐨𝐦𝐚</a></div>
-            </nav>
-        </div>
-        
-        <div class="textoprincipal">
-        <p id="texto1">𝐈𝐧𝐢𝐜𝐢𝐚𝐫 𝐮𝐧𝐚 𝐯𝐢𝐝𝐚 𝐬𝐚𝐥𝐮𝐝𝐚𝐛𝐥𝐞 𝐧𝐨 𝐫𝐞𝐪𝐮𝐢𝐞𝐫𝐞 𝐜𝐚𝐦𝐛𝐢𝐨𝐬 𝐝𝐫á𝐬𝐭𝐢𝐜𝐨𝐬. 𝐏𝐞𝐪𝐮𝐞ñ𝐨𝐬 𝐩𝐚𝐬𝐨𝐬, 𝐜𝐨𝐦𝐨 𝐦𝐞𝐣𝐨𝐫𝐚𝐫 𝐭𝐮 𝐝𝐢𝐞𝐭𝐚, 𝐦𝐨𝐯𝐞𝐫𝐭𝐞 𝐦á𝐬 𝐲 𝐝𝐞𝐬𝐜𝐚𝐧𝐬𝐚𝐫 𝐦𝐞𝐣𝐨𝐫, 𝐩𝐮𝐞𝐝𝐞𝐧 
-            𝐭𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦𝐚𝐫 𝐭𝐮 𝐛𝐢𝐞𝐧𝐞𝐬𝐭𝐚𝐫 𝐟í𝐬𝐢𝐜𝐨 𝐲 𝐦𝐞𝐧𝐭𝐚𝐥. ¡𝐓𝐨𝐝𝐨 𝐜𝐨𝐦𝐢𝐞𝐧𝐳𝐚 𝐜𝐨𝐧 𝐞𝐥 𝐩𝐫𝐢𝐦𝐞𝐫 𝐩𝐚𝐬𝐨!</p>
-    </div>       <div class="capa"></div>
-<input type="checkbox" id="btn-menu">
-<div class="menucontenedor">
-    <div class="cont-menu">
-        <nav>
-            <a href="RecetasSaludables.html">𝐑𝐞𝐜𝐞𝐭𝐚𝐬 𝐬𝐚𝐥𝐮𝐝𝐚𝐛𝐥𝐞𝐬</a>
-            <a href="EjerciciosEncasa.html">𝐄𝐣𝐞𝐫𝐜𝐢𝐜𝐢𝐨𝐬</a>
-            <a href="Recomendaciones.html">𝐑𝐞𝐜𝐨𝐦𝐞𝐧𝐝𝐚𝐜𝐢𝐨𝐧𝐞𝐬</a>
-            <a href="Nosotros.html">𝐍𝐨𝐬𝐨𝐭𝐫𝐨𝐬</a>
-        </nav>
-        <label for="btn-menu">✕</label>
-    </div>
-</div>
-</head>
-<body>  
+  #cuadrado-boton{
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #6b9080;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+    margin-bottom: 25px;
+  }
+  
+  .contenedor-perfiles{
+    display: flex;
+    gap: 20px;
+    justify-content:space-evenly;
+  }
+  
+  .perfil{
+    background-color: #CCE3DE;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 250px;
+    position: relative;
+    margin-bottom: 50px;
+    transition: 0.3;
+  }
+  
+  .perfil:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el mouse */
+  }
+  
+  .perfil img {
+    border-radius: 80px;
+    width: 160px;
+    height: 160px;
+    transform: translateX(-5%);
+    margin-bottom: 10px;
+    }
+  
+  .perfil h3 {
+    margin-top: 0px;
+  }
+  
+  .perfil p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+  }
 
-    <div class="segundaParte">
+  
+  /*PARTE FINAL*/
+  
+  .parteFinal{
+  background-color:#cce3de;
+  float: inline-start;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  }
+  #logo2{
+  height: 300px;
+  width: 300px;
+  margin-right: 60px;
+  margin-top: 100px;
+  
+  } 
+  #titulo-final{
+  color:#344f30;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-top: 100px;
+  text-align: center;
+  }
 
-         <img id="imagen1" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/estilo-de-vida-saludable.png?raw=true" alt="fondo plato">
-
-        <div class="textos1">
-        <h1 id="titulo-equilibrio" >¡𝐄𝐧𝐜𝐮𝐞𝐧𝐭𝐫𝐚 𝐞𝐥 𝐄𝐪𝐮𝐢𝐥𝐢𝐛𝐫𝐢𝐨 𝐏𝐞𝐫𝐟𝐞𝐜𝐭𝐨 𝐩𝐚𝐫𝐚 𝐮𝐧𝐚 𝐕𝐢𝐝𝐚 𝐒𝐚𝐥𝐮𝐝𝐚𝐛𝐥𝐞!</h1>
-        <p id="texto-equilibrio">Adoptar una vida saludable va más allá de seguir una dieta y ejercitarse. Se trata de construir un equilibrio que también contemple tu bienestar mental y emocional. Escuchar a tu cuerpo es clave para ajustar tus hábitos de manera que puedas crear una rutina sostenible que se adapte a tu ritmo de vida.</p>
-        <p id="texto-equilibrio">Incorpora pausas para relajarte, actividades que te hagan feliz, y tiempos de desconexión para manejar el estrés de manera efectiva. No busques la perfección; busca el equilibrio que te permita sentirte bien día a día, adaptando pequeños cambios que juntos hagan una gran diferencia en tu salud y bienestar.</p>   
-    </div>
-
-    </div>
- 
-        <div class="terceraParte">
-
-            <h1 id="titulo">𝐂𝐨𝐧𝐬𝐞𝐣𝐨𝐬 𝐩𝐚𝐫𝐚 𝐮𝐧𝐚 𝐯𝐢𝐝𝐚 𝐬𝐚𝐥𝐮𝐝𝐚𝐛𝐥𝐞:</h1>
-            <div class="consejos">
-        
-
-                <div id="consejos-container">
-                    <img id="imagenes-consejos" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/alimentacion-saludable.png?raw=true" alt="imagen1">
-                    <p id="titulo-consejos">𝐀𝐥𝐢𝐦𝐞𝐧𝐭𝐚𝐜𝐢𝐨𝐧</p>
-                    <P ID="texto-consejos">Come frutas, verduras y proteínas magras. Evita alimentos ultraprocesados para mantener un peso adecuado.
-                    </p></P>
-                      </div>
-                
-                <div id="consejos-container">
-                    <img id="imagenes-consejos" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/deporte.png?raw=true" alt="imagen2">
-                    <p id="titulo-consejos">𝐄𝐣𝐞𝐫𝐜𝐢𝐜𝐢𝐨𝐬</p>
-                    <p id="texto-consejos">Realiza al menos 30 minutos de ejercicio diario, combinando cardio y fuerza para mejorar tu salud física.</p>
-                </div>
-
-
-                <div id="consejos-container">
-                    <img id="imagenes-consejos" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/dormir.png?raw=true" alt="imagen3">
-                    <p id="titulo-consejos">𝐃𝐞𝐬𝐜𝐚𝐧𝐬𝐨</p>
-                        <p id="texto-consejos">Duerme entre 7 y 9 horas diarias para ayudar a tu cuerpo a recuperarse y mejorar tu rendimiento.                        </p>
-                   </div>
-
-                <div id="consejos-container">
-                    <img id="imagenes-consejos" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/hidratacion.png?raw=true" alt="imagen4">
-                    <p id="titulo-consejos">𝐇𝐢𝐝𝐫𝐚𝐭𝐚𝐜𝐢𝐨𝐧</p>
-                     <p id="texto-consejos">Bebe al menos 2 litros de agua al día para mantenerte hidratado y con energía.
-                    </p>
-                    </p>
-                </div>
-
-                
-            </div>
-            
-        </div>
-
-        <footer class="cuartaParte">
-
-            <div class="textos2">
-                  <h1 id="titulo-final" >𝐑𝐞𝐜𝐮𝐞𝐫𝐝𝐚, 𝐮𝐧 𝐥𝐞𝐯𝐞 𝐜𝐚𝐦𝐛𝐢𝐨 𝐩𝐮𝐞𝐝𝐞 𝐡𝐚𝐜𝐞𝐫 𝐮𝐧𝐚 𝐠𝐫𝐚𝐧 𝐝𝐢𝐟𝐞𝐫𝐞𝐧𝐜𝐢𝐚. ¡𝐄𝐦𝐩𝐢𝐞𝐳𝐚 𝐚𝐡𝐨𝐫𝐚!</h1>
-               
-                </div>
-            
-            <img id="logo2" src="https://github.com/alfoocoiro/imagenes_proyecto/blob/main/LogoProyecto.png?raw=true" alt="logo">
-
-        </footer>
-
-    
-    
-</body>
-</html>
+  #arrowup{
+    position: fixed;
+    display: flex;
+  
+    width: 30px;
+    height: 30px;
+  
+    bottom: 20px;
+    right: 60px;
+  }
