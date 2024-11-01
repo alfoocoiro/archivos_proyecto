@@ -12,7 +12,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
 }
 
 .login-box {
@@ -32,8 +31,6 @@ body {
 .textbox {
   width: 100%;
   padding: 10px;
-  border: none;
-  outline: none;
   background: rgba(255, 255, 255, 0.3);
   color: white;
   font-size: 16px;
